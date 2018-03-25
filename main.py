@@ -1,4 +1,4 @@
-from steptree import StepTree
+from amazonstairchallenge.steptree import StepTree
 
 
 def main():
