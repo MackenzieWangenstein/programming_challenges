@@ -44,6 +44,8 @@ class StepTree(object):
         pprint.pprint(self.solutions)
     
     def step_tree(self, steps_left, parent_sequence):
+        if steps_left < 0:
+            return
         if steps_left == 0:
             self.solutions[self.solution_count] = parent_sequence
             self.solution_count += 1
